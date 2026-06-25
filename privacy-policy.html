@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<title>ポモる プライバシーポリシー</title>
+<style>
+  :root {
+    --brand: #3a9d7a;
+    --brand-600: #2f8366;
+    --ink-900: #1c2620;
+    --ink-700: #3c4a42;
+    --ink-500: #6b7a72;
+    --paper: #f6f8f6;
+    --surface: #ffffff;
+    --line: #e3e9e5;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink-700);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+      "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 22px 72px;
+  }
+  header {
+    text-align: center;
+    padding: 28px 0 8px;
+  }
+  .logo {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--brand-600);
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    color: var(--ink-900);
+    margin: 18px 0 6px;
+    text-align: center;
+  }
+  .updated {
+    text-align: center;
+    color: var(--ink-500);
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 24px 8px;
+  }
+  .lead {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink-900);
+    margin: 32px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brand-600);
+    margin: 20px 0 6px;
+  }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0; padding-left: 1.3em; }
+  li { margin: 6px 0; }
+  strong { color: var(--ink-900); }
+  a { color: var(--brand-600); }
+  footer {
+    text-align: center;
+    color: var(--ink-500);
+    font-size: 12px;
+    margin-top: 36px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brand: #6fc3a2;
+      --brand-600: #7fcaab;
+      --ink-900: #eef3f0;
+      --ink-700: #c7d2cb;
+      --ink-500: #8a978f;
+      --paper: #111613;
+      --surface: #1a211d;
+      --line: #2a322d;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="logo">ポモる</span>
+      <h1>プライバシーポリシー</h1>
+      <div class="updated">最終更新日: 2026年6月25日</div>
+    </header>
+
+    <div class="card">
+      <p class="lead">
+        「ポモる」（以下「本アプリ」）は、仲間と同じ合言葉でルームに集まり、共有タイマーで一緒に集中・休憩するためのアプリです。本アプリは利用者のプライバシーを尊重し、収集・取り扱う情報を必要最小限にとどめています。
+      </p>
+
+      <h2>1. 取り扱う情報</h2>
+
+      <h3>端末内にのみ保存される情報</h3>
+      <p>以下は利用者の端末内にのみ保存され、開発者や第三者のサーバーに送信・保存されることはありません。</p>
+      <ul>
+        <li>プロフィール（表示名・アバターの絵文字）</li>
+        <li>アプリ設定（マイク／カメラの初期状態、通知のオン・オフ、ダークモード）</li>
+        <li>集中時間の累計（この端末で集中した時間の合計）</li>
+        <li>一時的なブロック情報（退室させられたルームへの再入室制限）</li>
+      </ul>
+
+      <h3>ルーム参加中に他の参加者と共有される情報</h3>
+      <p>合言葉で同じルームに入っている間、以下がリアルタイムに他の参加者へ共有されます。</p>
+      <ul>
+        <li>表示名・アバター・マイク／カメラの状態・タイマーの状態</li>
+        <li>カメラ映像（集中モード時の見守り用）およびマイク音声（休憩モード時の通話用）</li>
+      </ul>
+      <p>
+        映像・音声は参加者の端末どうしで直接（ピアツーピア）送受信され、サーバーに録画・録音・保存されることはありません。ルームを退出すると共有は終了します。
+      </p>
+
+      <h2>2. 第三者サービス</h2>
+      <p>本アプリは接続のために以下の外部サービスを利用します。</p>
+      <ul>
+        <li><strong>Supabase（リアルタイム通信基盤）</strong>: ルームの参加状況や、接続を確立するための制御メッセージ（シグナリング）の中継に利用します。合言葉から生成されるルーム識別子および上記「共有される情報」が経由します。</li>
+        <li><strong>TURN リレーサーバー（metered.ca）</strong>: 端末間で直接接続できないネットワーク環境のとき、映像・音声を中継します。中継されたデータは保存されません。</li>
+      </ul>
+      <p>これらの事業者のプライバシーポリシーも併せてご確認ください。</p>
+
+      <h2>3. 利用する端末の権限</h2>
+      <ul>
+        <li><strong>カメラ</strong>: 集中モードで自分の映像を他の参加者に共有するため</li>
+        <li><strong>マイク</strong>: 休憩モードで音声通話をするため</li>
+        <li><strong>ローカルネットワーク</strong>: 同じネットワーク内の参加者と直接接続するため</li>
+        <li><strong>通知</strong>: 集中⇄休憩の切り替えをお知らせするため</li>
+      </ul>
+      <p>いずれも該当機能を使うためにのみ用い、許可は端末の設定からいつでも変更できます。</p>
+
+      <h2>4. 収集しない情報・行わないこと</h2>
+      <ul>
+        <li>アカウント登録・ログインはありません。メールアドレスやパスワードを収集しません。</li>
+        <li>広告は表示しません。広告目的のトラッキングや行動分析は行いません。</li>
+        <li>映像・音声・会話の内容をサーバーに保存しません。</li>
+        <li>収集した情報を販売・第三者へ提供しません（接続のための上記中継を除く）。</li>
+      </ul>
+
+      <h2>5. データの保持と削除</h2>
+      <p>端末内に保存される情報は、本アプリをアンインストールするとすべて削除されます。表示名やアバターは設定画面からいつでも変更できます。</p>
+
+      <h2>6. お子様のプライバシー</h2>
+      <p>本アプリは特定の年齢層を対象にした機能や、個人を特定する情報の収集を行いません。</p>
+
+      <h2>7. ポリシーの変更</h2>
+      <p>本ポリシーは必要に応じて改定することがあります。重要な変更がある場合は、アプリの更新等を通じてお知らせします。</p>
+
+      <h2>8. お問い合わせ</h2>
+      <p>本ポリシーや本アプリのプライバシーに関するお問い合わせは、下記までご連絡ください。</p>
+      <ul>
+        <li>メール: <a href="mailto:melswonder@icloud.com">melswonder@icloud.com</a></li>
+      </ul>
+    </div>
+
+    <footer>© 2026 ポモる</footer>
+  </div>
+</body>
+</html>

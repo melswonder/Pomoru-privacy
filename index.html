@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<title>ポモる — 法的情報</title>
+<style>
+  :root {
+    --brand: #3a9d7a;
+    --brand-600: #2f8366;
+    --ink-900: #1c2620;
+    --ink-700: #3c4a42;
+    --ink-500: #6b7a72;
+    --paper: #f6f8f6;
+    --surface: #ffffff;
+    --line: #e3e9e5;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink-700);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+      "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 22px 72px;
+  }
+  header {
+    text-align: center;
+    padding: 28px 0 8px;
+  }
+  .logo {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--brand-600);
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    color: var(--ink-900);
+    margin: 18px 0 6px;
+    text-align: center;
+  }
+  .lead {
+    text-align: center;
+    color: var(--ink-500);
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 8px 8px;
+  }
+  a.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--ink-900);
+    font-weight: 700;
+    padding: 18px 18px;
+    border-radius: 12px;
+  }
+  a.row + a.row { border-top: 1px solid var(--line); }
+  a.row:hover { background: var(--paper); }
+  .chev { color: var(--ink-500); }
+  footer {
+    text-align: center;
+    color: var(--ink-500);
+    font-size: 12px;
+    margin-top: 36px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brand: #6fc3a2;
+      --brand-600: #7fcaab;
+      --ink-900: #eef3f0;
+      --ink-700: #c7d2cb;
+      --ink-500: #8a978f;
+      --paper: #111613;
+      --surface: #1a211d;
+      --line: #2a322d;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="logo">ポモる</span>
+      <h1>法的情報</h1>
+      <div class="lead">プライバシーポリシーと利用規約</div>
+    </header>
+
+    <div class="card">
+      <a class="row" href="./privacy-policy.html">プライバシーポリシー<span class="chev">›</span></a>
+      <a class="row" href="./terms-of-use.html">利用規約<span class="chev">›</span></a>
+    </div>
+
+    <footer>© 2026 ポモる</footer>
+  </div>
+</body>
+</html>
